@@ -16,7 +16,7 @@ class MovController extends Controller
     private $objMov;
 
     public function __construct(){
-        $this->objMov = new Mov();
+        //$this->objMov = new Mov();
     }
 
     public function index()
