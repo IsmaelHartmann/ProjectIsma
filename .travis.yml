@@ -10,8 +10,8 @@ script:
 deploy:
   provider: heroku
   app: quiet-coast-59009
-  on:
-    branch: master
-    api_key:
+  api_key:
       secure: XXplrhPPvM9S0HqrMf0sHHNaPCX9JVg1uvj2mZ5ipkjB907FLiF/0zFjvnDlX4qyaXndaOv576Yg3Y4isqkrDTOWnUMTNcSm18K3J7Z88IBuoZZ/djSqPXKqUCTeOso9UpG3sXg6360ljafyzlL/0v2e/qummhnY4Llmyai51hJVhik57/hZ2pdhUtmba9TwsSeagLiyYOD1Te9nvcCFqdSPhTpdFNomh69vm89/hrM84sPQXj33kbY15rqVWBOmaslCDF+VJXAa2tRzwTdp/8JUYe5a5PO+rii0wURYPCJ/9jm+zP8J/JkvIwvxVuAGzEmiSroOFzGCe24FaapAy4KJvaiik9couP67RWO+kK8Lf0i4EfehnFMA5lgdyEGCVpqF1HjQZybD2rhOQtBxV7smK7DCXmJGAAilfTUYOhJDkUgYdiHUTaeO6WagyDwRZzeJ8nj+8g+csHo8fLVQKdQvdtkYvvdRGCadlaYLg4hHlvjF6YXQnRw+vENn06GUs+VO6xS4CgAkEJVY5OK7Ony3QJSiBcKtyHJVECtKxGCaDLKTv7xWEU2N16Hvzmi7/OsMZSWE+1J3FNEMPjMqpad0ljE8DyBsGyq81a1QGyauULsIapa9D7a7vCZiQa4I0kRfavWoBkEUMpgG4y4+uNhwa48pQDPrh8FV33qiJI4=
   run: php artisan migrate --seed --force
+  on:
+    branch: master
