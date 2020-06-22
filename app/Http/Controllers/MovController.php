@@ -16,14 +16,14 @@ class MovController extends Controller
     private $objMov;
 
     public function __construct(){
-        //$this->objMov = new Mov();
+        $this->objMov = new Mov();
     }
 
     public function index()
     {
-        return view('teste');
-        //$mov = $this->objMov->all();
-        //return view('index', compact('mov'));
+        //return view('teste');
+        $mov = $this->objMov->all();
+        return view('index', compact('mov'));
     }
 
     /**
