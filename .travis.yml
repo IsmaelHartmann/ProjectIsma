@@ -12,7 +12,7 @@ deploy:
   provider: heroku
   app: quiet-coast-59009
   api_key: d99f6dde-b572-4a61-b3f2-ff629203c4f3
-  run: php artisan migrate --force
+  run: php artisan migrate --seed --force
   on:
     branch: master
 
