@@ -1,4 +1,4 @@
-root = true
+root = truephp artisan app:name
 
 [*]
 charset = utf-8
