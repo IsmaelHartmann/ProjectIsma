@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resources([
+    'movimentacoes' => 'MovController'
+]);
 
 
 Route::resources([
-    'movimentacoes' => 'MovController'
+    '/' => 'MovController'
 ]);
