@@ -5,6 +5,16 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-
+  - cp .env.travis .env
+  - heroku run bash
+  - heroku run "php artisan migrate --seed"
 script:
   - vendor/bin/phpunit
+deploy:
+  provider: heroku
+  app: ProjectIsma
+  api_key: d99f6dde-b572-4a61-b3f2-ff629203c4f3
+  run: php artisan migrate --seed
+  on:
+    branch: staging
+
