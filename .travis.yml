@@ -1,17 +1,17 @@
 language: php
 php:
-  - '7.4'
-
+- '7.4'
 before_script:
-  - composer self-update
-  - composer install --no-interaction
-  - cp .env.travis .env
+- composer self-update
+- composer install --no-interaction
+- cp .env.travis .env
 script:
-  - vendor/bin/phpunit
+- vendor/bin/phpunit
 deploy:
   provider: heroku
   app: quiet-coast-59009
-  api_key: d99f6dde-b572-4a61-b3f2-ff629203c4f3
+  api_key:
+    secure: N+mwxCSuQzIRybs0FUpGW/cHNQ+cnZeGCqc/XOTlKDtNLggRW80QbtFs1T9KAZuh6jZISnsJWJR8g1M3fpLy8/RQ9uLo/6UJd2nrAD32/+ZtqxsdFZPAz6PDcu0vNI0qq1/1jLCguwPuoRCFMmyfBHDdh/1IQUxSipc8INaiqvm1xBDJwbLBYB7a+Nn80qwXYFIT5vMdOR/O9hIoMYt1nBKDlRSr+BA/u63I2pFMC6JtKdKORpKtZ2JdJ7Ems4J7TolrgkUAwENHcdbcAkytg5fZGztYZZpERbN/pNQw9dhQXnt5/BG40Xg3gW/XW/NzjEe2UfIu6TnpECHP7u1SPEd7ww59bQO0PkcuFjXbE/aOHKUZcIC9xAUmV0l/CVaG9T1R2IVrFLbVtREw5bqw1YmOPM30j0UBYpo7k4A0H4r3dMEhrhlIyUmTQfzNLODKB/L6NdQ6OLQ6RYlMAWoOC42NjMGA+WWpQco1KqJDuxBSKq7PCt67ezHDX0G7i7gktrw7Vgf/s1VSRmExs/KKbsbG9zwt5RK5U6Jk+YbD9yV9ZyEbMvSIPwoIRgp3kpjM/0mS+eG/zMktyV6Cw49MJ7K40QhVC5hMsFdQdDKxUxY2TlsUAbtooWeaZmxx2lgHP9Tnk7vXoQIk9foirs5vI3unkRpGZqULCcJeyuM/F0M=
   run: php artisan migrate --seed --force
   on:
     branch: master
