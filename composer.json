@@ -20,7 +20,8 @@
         "fzaninotto/faker": "^1.9.1",
         "mockery/mockery": "^1.4.0",
         "nunomaduro/collision": "^4.1",
-        "phpunit/phpunit": "^8"
+        "phpunit/phpunit": "^8",
+        "heroku/heroku-buildpack-php": "*"
     },
     "config": {
         "optimize-autoloader": true,
