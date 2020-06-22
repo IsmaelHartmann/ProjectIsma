@@ -21,8 +21,9 @@ class MovController extends Controller
 
     public function index()
     {
-        $mov = $this->objMov->all();
-        return view('index', compact('mov'));
+        dd('sadasda')
+        //$mov = $this->objMov->all();
+        //return view('index', compact('mov'));
     }
 
     /**
