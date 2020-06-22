@@ -1,0 +1,9 @@
+language: php
+php:
+  - '7.4'
+
+before_script:
+  - compose install --no-interaction
+
+script:
+  - vendor/bin/phpunit
