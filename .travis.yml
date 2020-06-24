@@ -9,6 +9,7 @@ script:
 - vendor/bin/phpunit
 deploy:
   provider: heroku
+  edge: true
   app: quiet-coast-59009
   run: php artisan migrate --seed --force
   on:
