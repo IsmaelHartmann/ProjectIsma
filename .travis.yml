@@ -15,5 +15,6 @@ deploy:
   on:
     branch: master
   api_key:
-    secure: h/41lno+3F/sVmW6TsfDPOawI7+WPQAz9POvOo3pVbbVLxVIFKKIDFLRAKX5KoIrwM6qMKjeFrbu0TrsBmC22WAoIP3NpR8/UCmh91HW8QCAfwL4Jk3hPhuXor5FX+O0WFDHRTBOkZmasUlNcmHoEU0cDgqqnV+VXz4K7Vnj+u4iFc3KhQwZXqxZ2qMhc9OQrTyVkeVg15WKtvwrHwVEhSjUQ3Z1wghKi64MmcaDYeJ0KWyRZfg0wTVQ89XqcmO9JlwIl+latSheMXaWKBueao54IE2s/mPUyusX5hW0YwT+L30EYsgAfhE9mDMi2oO32LA15wviGMmTziHCjlwZhMhYOYC0MDmDYJbhNAaypSTXmkpYz5HoZ9jCSpQwgSTYgAlRmwzuQND0e7HMNpgHdt6vhnzr1sjwa+Gourc5nhDzZKMsct4SfBwajp0GSudL88ESUasU6W/q3SpOwIoOvmOh2LJssvyg+n8kToHWDsTtTeA5m7MeIwh7gFfwE4x6hMF8FdB52G6mE1ucCV2uNsFvdNOKIypKQ2DnUQOdbqTT1YyEA74ORWyQMaxzn2UfQTOocLyOY0J+MvGFa+TwVGYBvNOAbHvSRdT3lEuC2nWt0cCanbD0Aj7hRF2kMCLp6HML1lc7P33QIY1L5AhTxt43RdtXXJLaKSkm86tnHD8=
+    secure: d13ef821-cf90-447a-a33e-0c455a572ffb
   strategy: git
+  run: php artisan migrate --seed --force
