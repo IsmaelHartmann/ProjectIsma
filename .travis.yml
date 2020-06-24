@@ -7,9 +7,3 @@ before_script:
 - cp .env.travis .env
 script:
 - vendor/bin/phpunit
-deploy:
-  provider: heroku
-  api_key:
-    secure: Cgl6SDtcywKFMO8Kw55krcNt+cPiJ924fnV6XjQZpcBolnOLxyhlSMy/EgHMoLh9J1Wfb8bBW3jwq+9u7klc9tnHvV0u0M7r0H1f2hqNTXWn0/js+vGUnp87lbpNWtIK1RjA/qvzIsVZ3O11DqxgniCcwAfcQpAZfv1bC08g6udHldypibT9gdhr65EnHFXHZYsW5zBOCrNbCZnmDTVrM+uKUrhbupWJIwJVKBLHOsODlHM02+NengUrNzZbtdhC7mP6e1LHd3/Q5DfMJNEKeVOGOIK3hyqzfLlneLpKQelUxTeU9hhFihhHInLa1v9oQInsim+2CX80UXPtkvyd9rbuDeiEYRbU8oFhPvkmiS50hKf0k/SJp4TVHrWnEgGSpW2jb3SvULulIMqOgHDo5FpCbv73ygGVFBjQ9VD5onHnAALt93qGnsSvo7zrmUxDNCjl58MEref50rsv1EpdbsTj7qnZA1RAQGLejXi2qoDr59InmhS6CxBcaukUU7hVaY2y5zPlCHAZMyH51VNll00MjYS1g66igs/8w0E8mkLd8OKyyxODsz2mM/FkHWih/o3nxudxft2zoUgiLPafnbAY7zBZFGgH2jo+bFPyLQB475d2Bs6zt6IWEfurISZjyVNPiUaeWZvwA8hOtw9knJ/ZsMTHig/l8G5jb8ChDDc=
-  app: quiet-coast-59009
-  skip_cleanup: 'true'
