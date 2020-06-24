@@ -39,7 +39,7 @@ class disponibilidadeTest extends TestCase
 
        $response->assertStatus(200);
 
-       $this->assertEquals("mov2",$result->descricao);
+       $this->assertEquals("mov",$result->descricao);
 
     }
 }
