@@ -31,7 +31,7 @@
                         <a href="{{url("movimentacoes/$movs->id/edit")}}">
                             <button class="btn btn-primary">Editar</button>
                         </a>
-
+<br>
                         <form method="POST" action="{{url("movimentacoes/$movs->id")}}">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
