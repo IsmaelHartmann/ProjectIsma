@@ -7,11 +7,3 @@ before_script:
 - cp .env.travis .env
 script:
 - vendor/bin/phpunit
-deploy:
-  provider: heroku
-  api_key:
-    secure: PQ8s6SYarSUJ+10bL1znF+JtVrOH/cNo7so5SIXh7vXpUqjHzRELsbq7lJ8uTU6PbiHZcdAc1XEKUbGGg5SGUjezyk8Er0a+viAF9hrQd2Jq/B7ZEIpPyzALcz9InsXB5Qtmdck93PI1RVscAHXra+tjklwWC5T0ZBuM6CI4UWrdaywV0RLOMEBDXX8dawS0NxTU74KOD75CQQ9VjN5lxgkO0VrqKbMpWgcy7OoBlxHgXNrLxawYsRX9h9fWCyGaw0sMD9O1FS4PEsy1AiygMatZljd56uRw5Xj+OUqCV8uo2x2EkymDYkprTEiRnKzoLbXdJhQNrU/MCEmJpTZuJZFKloTxnmwil+7Gcaiy9rBt1qUk2qiLZcY8Ht1v7UgO5WScX2JvQGHcTusWv2yqqc5CQGC1/u9cMbyKZUfFve6z68rdj4z3grm4P133duZgItVaCJ518yu7gl7hjJt6FH5KI7HXUSY422aXU0jr0ZynZ9lUQy3HGnUdx3cAWY+hMjkkU8dFwGfL71SrvCneizbejTI0vuh9ShqSCub3CHUmgVX9e8+91S97iRI1dgG/BwVqSUu2/lYM1rC25wcGFSQUCzwSkE8TiCHi96hGp3uk6diOrEr1lSQvCYqbG3tXNgt5XJGa+lxU58OIstFcNeuqmurVKmmagfLJor53njs=
-  app: quiet-coast-59009
-  on:
-    repo: IsmaelHartmann/ProjectIsma
-  skip_cleanup: 'true'
