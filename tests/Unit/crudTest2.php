@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use App\Mov;
 use PHPUnit\Framework\TestCase;
 
-class crudTest extends TestCase
+class crudTest2 extends TestCase
 {
    /* public function testCreate()
     {

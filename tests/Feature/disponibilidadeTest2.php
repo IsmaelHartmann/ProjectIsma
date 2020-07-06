@@ -5,7 +5,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use App\Mov;
 
-class disponibilidadeTest extends TestCase
+class disponibilidadeTest2 extends TestCase
 {
     use RefreshDatabase;
 
