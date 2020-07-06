@@ -13,7 +13,7 @@ class TesteIsma extends Migration
      */
     public function up()
     {
-        Schema::create('integracao_isma', function (Blueprint $table) {
+        Schema::create('integracao_isma2', function (Blueprint $table) {
             $table->id();
             $table->text('descricao');
         });
