@@ -13,15 +13,21 @@
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "pdepend/pdepend": "^2.8",
+        "sebastian/phpcpd": "^5.0",
+        "squizlabs/php_codesniffer": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",
+        "heroku/heroku-buildpack-php": "*",
         "mockery/mockery": "^1.4.0",
         "nunomaduro/collision": "^4.1",
+        "phploc/phploc": "*",
+        "phpmd/phpmd": "@stable",
         "phpunit/phpunit": "^8",
-        "heroku/heroku-buildpack-php": "*"
+        "theseer/phpdox": "^0.12.0"
     },
     "config": {
         "optimize-autoloader": true,
