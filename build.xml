@@ -224,7 +224,7 @@
         <property name="phpcpd.done" value="true"/>
     </target>
 
-    <target name="phpunit"
+   <!-- <target name="phpunit"
             unless="phpunit.done"
             depends="prepare"
             description="Run unit tests with PHPUnit">
@@ -247,7 +247,7 @@
         </exec>
 
         <property name="phpunit.done" value="true"/>
-    </target>
+    </target>-->
 
     <target name="phpdox"
             unless="phpdox.done"
@@ -260,11 +260,11 @@
 
     <target name="-check-failure">
         <fail message="PHPUnit did not finish successfully">
-            <!--<condition>
+            <condition>
                 <not>
                     <equals arg1="${result.phpunit}" arg2="0"/>
                 </not>
-            </condition>-->
+            </condition>
         </fail>
     </target>
 </project>
