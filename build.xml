@@ -229,7 +229,6 @@
         <property name="phpcpd.done" value="true"/>
     </target>
 
-
     <target name="phpunit"
             unless="phpunit.done"
             depends="prepare"
