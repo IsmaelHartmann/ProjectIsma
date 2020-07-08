@@ -13,7 +13,7 @@ class disponibilidadeTest extends TestCase
     {
         $response = $this->get('/movimentacoes');
 
-        $response->assertStatus(200);
+        $response->assertStatus(300);
 
     }
 
