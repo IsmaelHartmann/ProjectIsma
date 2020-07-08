@@ -86,11 +86,11 @@
             description="Perform syntax check of sourcecode files">
          <apply executable="php" taskname="lint">
             <arg value="-l" />
-             <!--
+
                       <fileset dir="${basedir}/src">
                           <include name="**/*.php" />
                           <modified />
-                      </fileset>-->
+                      </fileset>
                                    <fileset dir="${basedir}/tests">
                                        <include name="**/*.php" />
                                        <modified />
