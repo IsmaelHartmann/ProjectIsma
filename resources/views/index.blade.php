@@ -5,6 +5,7 @@
     <div class="text-center mt-3 mb-4">
         <a href="{{url('movimentacoes/create')}}">
             <button class="btn btn-success">Cadastrar teste jenkins</button>
+
         </a>
     </div>
     <div class="col-8 m-auto">
@@ -31,7 +32,7 @@
                         <a href="{{url("movimentacoes/$movs->id/edit")}}">
                             <button class="btn btn-primary">Editar</button>
                         </a>
-<br>
+
                         <form method="POST" action="{{url("movimentacoes/$movs->id")}}">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
@@ -44,7 +45,5 @@
             </tbody>
         </table>
     </div>
-
-
 
 @endsection
