@@ -21,3 +21,7 @@ Route::resources([
 Route::resources([
     '/' => 'MovController'
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

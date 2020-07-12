@@ -47,9 +47,18 @@ class MovController extends Controller
         $cad=$this->objMov->create([
             'descricao'=>$request->descricao
         ]);
-        if($cad){
-            return redirect('movimentacoes');
-        }
+       // if($cad){
+         //   return redirect('movimentacoes');
+        //}
+    }
+
+    public function storeAPI(Request $request)
+    {
+        $cad = $this->objMov->create([
+            'descricao'=>$request->descricao
+        ]);
+
+        return response()->json($cad, 201);
     }
 
     /**
